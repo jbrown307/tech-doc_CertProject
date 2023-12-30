@@ -2,28 +2,63 @@ html {
   box-sizing: border-box;
 }
 
-.main-content {
-  border: dotted 1px;
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #4d4e53;
+  line-height: 1.5rem;
+}
+
+p {
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+code {
+  margin-left: 2rem;
+}
+
+header {
+  color: black;
+  font-size: 1.8em;
+  margin-bottom: 2rem;
+  margin: 0.625rem;
 }
 
 .main-section {
-  border: dotted 1px;
-  margin-left: 15%;
+  color: #4d4e53;
+  margin-left: 310px;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 
 #navbar {
-  border: dotted 1px;
+  padding: 1rem;
+  border-right: solid #4d4e53 0.19rem;
   position: fixed;
   top: 0;
   left: 0;
   height: auto;
-  width: 15%;
+  min-width: 290px;
 }
 
 .nav-link {
+  border-bottom: solid 1px #4d4e53;
   display: block;
-  padding: 4%;
-  color: black;
+  padding: 1rem;
+  color: #4d4e53;
   text-decoration: none;
 }
-
+/* What this query really means is, “If [device width] is less than or equal to 815px, then do {...}.” */
+@media (max-width: 815px) {
+  .main-section {
+    width: 100%;
+    margin: 0;
+  }
+  #navbar {
+    display: none;
+  }
+}
