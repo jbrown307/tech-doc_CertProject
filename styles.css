@@ -1,15 +1,16 @@
+/* ---------- general ---------- */
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
-  font: inherit;
+  /* font: inherit; */
 }
 
 html {
-  color-scheme: dark light;
+  /* color-scheme: dark light; */
 }
 
 body {
@@ -23,5 +24,38 @@ img, picture, svg, video {
 
 input, textarea, button, select {
   font: inherit;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+/* ---------- navbar ---------- */
+#navbar {
+  border: solid 3px red;
+  background-color: lightblue;
+
+  /* display: flex;
+  flex-direction: column; */
+  position: fixed;
+  z-index: 999;
+  width: 25%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+  .nav-link {
+    display: block;
+  }
+
+/* ---------- main content ---------- */
+#main-doc {
+  border: solid 3px red;
+  background-color: lightgreen;
+
+  width: 75%;
+  margin-left: 25%;
+  
 }
 
