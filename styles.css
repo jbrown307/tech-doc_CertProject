@@ -1,29 +1,14 @@
 /* ---------- general ---------- */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   /* font: inherit; */
-}
-
-html {
-  /* color-scheme: dark light; */
-}
+} 
 
 body {
   min-height: 100vh;
-}
-
-img, picture, svg, video {
-  display: block;
-  max-width: 100%;
-}
-
-input, textarea, button, select {
-  font: inherit;
 }
 
 section {
@@ -35,8 +20,6 @@ section {
   border: solid 3px red;
   background-color: lightblue;
 
-  /* display: flex;
-  flex-direction: column; */
   position: fixed;
   z-index: 999;
   width: 25%;
@@ -59,3 +42,29 @@ section {
   
 }
 
+/* ---------- media query ---------- */
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+
+/* ---------- main content ---------- */
+#main-doc {
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
+  padding: 1.5rem;
+}
+
+/* ---------- navbar ---------- */
+  #navbar {
+    width: fit-content;
+    height: fit-content;
+    padding: 1.5rem;
+    text-align: center;
+    position: static;
+
+  }
+
+    .nav-link {
+      display: inline;
+    }
+}
