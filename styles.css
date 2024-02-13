@@ -1,10 +1,13 @@
-/* ---------- general ---------- */
+/* Large devices (laptops/desktops, 992px and up) */
 
+/* ---------- general ---------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font: inherit; */
+  font-family: "open sans", sans-serif;
+  color: rgb(168, 160, 160);
+  background-color: #1b1b1b; 
 } 
 
 body {
@@ -12,39 +15,95 @@ body {
 }
 
 section {
-  margin-bottom: 3rem;
+  margin-bottom: 1.75rem;
+  
+}
+
+li {
+  list-style: none;
+  font-style: italic;
+  margin-left: 2rem;
+}
+
+  li:before { 
+    content: "-";
+  }
+
+h1, h2 {
+  margin-bottom: 1.25rem;
+}
+
+code {
+  margin-left: 2rem;
+  font-style: italic;
+}
+
+p {
+  margin-left: 1rem;
 }
 
 /* ---------- navbar ---------- */
 #navbar {
-  border: solid 3px red;
-  background-color: lightblue;
+  /* border: solid 3px red; */
+  /* background-color: lightblue; */
 
   position: fixed;
   z-index: 999;
-  width: 25%;
+  width: 15%;
   height: 100%;
   top: 0;
   left: 0;
+  padding: 1.5rem;
 }
 
   .nav-link {
     display: block;
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding: 0.50rem;
+    margin: 0.50rem;
+    border-top: solid 1px;
   }
+
+    .nav-link:hover {
+      color: white;
+    }
+    
+
+    .nav-link:nth-child(n + 15) {
+       /* color: red; */
+
+      border-bottom: none;
+    }
+
+    .nav-link:nth-child(-n + 2) {
+       /* color: red; */
+
+      border-top: none;
+    }
 
 /* ---------- main content ---------- */
 #main-doc {
-  border: solid 3px red;
-  background-color: lightgreen;
+  /* border: solid 3px red; */
+  /* background-color: lightgreen; */
 
-  width: 75%;
-  margin-left: 25%;
-  
+  width: 85%;
+  margin-left: 15%;
+  padding: 5rem;
 }
 
 /* ---------- media query ---------- */
 /* Extra small devices (phones, 600px and down) */
 @media (max-width: 600px) {
+
+/* ---------- general ---------- */
+* {
+  font-size: 1.25rem;
+}
+
+h1 {
+  text-align: center;
+}
 
 /* ---------- main content ---------- */
 #main-doc {
@@ -54,17 +113,22 @@ section {
   padding: 1.5rem;
 }
 
+code {
+  /* font-size: 0.75rem; */
+}
+
 /* ---------- navbar ---------- */
   #navbar {
     width: fit-content;
     height: fit-content;
-    padding: 1.5rem;
-    text-align: center;
     position: static;
-
   }
 
     .nav-link {
       display: inline;
+      border: none;
+      font-size: 1rem;
+      padding: 0.25rem;
+      margin: 0.50rem
     }
 }

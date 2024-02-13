@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="styles.css">
+  <!-- "open sans" font family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
   <title>Technical Documentation</title>
 </head>
@@ -41,7 +45,7 @@
         <h2 id="th_1">Topic Heading 1</h2>
       </header>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur magnam architecto ipsum rerum cupiditate dolore optio at, omnis nostrum cum non eos incidunt?.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur magnam architecto ipsum rerum cupiditate dolore optio at, omnis nostrum cum non eos incidunt?. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum facere aliquam modi perferendis similique. Quo, fuga minima! Harum tenetur fuga culpa natus.</p>
         <br>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores aperiam cum aspernatur cupiditate ipsa adipisci quis ea quod! Ipsum eum provident, nisi reprehenderit dolore omnis atque illum facilis mollitia, eius ipsa aperiam quaerat, cumque voluptatibus voluptates iste animi explicabo velit cupiditate numquam. Sed reiciendis praesentium nobis, quod natus aliquid non, unde magni id odio repellat!</p>
         <br>
@@ -54,17 +58,17 @@
         <h2 id="th_2">Topic Heading 2</h2>
       </header>
 
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quod temporibus quisquam eligendi suscipit atque illo! Maxime alias, minus quo voluptas aut voluptatem odit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quod temporibus quisquam eligendi suscipit atque illo! Maxime alias, minus quo voluptas aut voluptatem odit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis quia officia ipsum vel nam veritatis possimus, eveniet dolore! Incidunt, animi quam! Nihil similique et praesentium eum repudiandae?</p>
       <br>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, necessitatibus:</p>
       <br>
       
-      <ol>
-        <li>item 1</li>
-        <li>item 1</li>
-        <li>item 1</li>
-        <li>item 1</li>
-      </ol>
+      <ul>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+      </ul>
     </section>
 
     <!---------- topic heading 3  ---------->
@@ -73,11 +77,11 @@
         <h2 id="th_3">Topic Heading 3</h2>
       </header>
 
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe nostrum rem dolorum.</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe nostrum rem dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ratione fugiat, eos sit eligendi quod perferendis minima ad optio suscipit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt in totam tempora?</p>
       <br>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi iste alias fugit provident mollitia repellat! Odit, vel. Repellat consequuntur facilis ratione, recusandae tenetur rerum vel at laboriosam voluptas laudantium, voluptate veniam?</p>
       <br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore accusamus atque nulla pariatur laboriosam repudiandae possimus sint.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore accusamus atque nulla pariatur laboriosam repudiandae possimus sint. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima voluptates, est aut error, neque quasi temporibus saepe, voluptatum et iste nemo assumenda accusantium minus quia! Nisi dolorum quas numquam optio cumque inventore rerum et nulla iusto! Expedita porro cupiditate consectetur!</p>
   </section>
 
     <!---------- topic heading 4  ---------->
@@ -89,11 +93,15 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae amet possimus voluptate repellat eum ea, rem qui fugiat placeat, nam, voluptatum facilis! Ex quidem repellendus amet dignissimos quia earum quo:</p>
     <br>
 
-    <code>CODE SAMPLE CODE SAMPLE CODE SAMPLE</code>
+    <code>---------- CODE SAMPLE ----------</code>
     <br>
-    <code>CODE SAMPLE</code>
     <br>
-    <code>CODE SAMPLE CODE SAMPLE</code>
+    <code>my $obj = bless 'Classname', \%obj;</code>
+    <br>
+    <code>@squares = map @numbers {$_**2};</code>
+    <br>
+    <br>
+    <code>---------- CODE SAMPLE ----------</code>
   </section>
 
   <!---------- topic heading 5  ---------->
@@ -104,12 +112,17 @@
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora doloremque possimus beatae necessitatibus debitis incidunt nihil, ullam consectetur molestiae labore neque non modi. Earum deleniti nihil quis. Explicabo facere aspernatur voluptates necessitatibus corrupti a, quam libero eos:</p>
     <br>
-
-    <code>CODE SAMPLE CODE SAMPLE CODE SAMPLE CODE SAMPLE</code>
+    <code>---------- CODE SAMPLE ----------</code>
     <br>
-    <code>CODE SAMPLE CODE SAMPLE </code>
     <br>
-    <code>CODE SAMPLE</code>
+    <code>_sysopen( -target=>\*FILE, -data=>[$filename,$mode,$perms] );</code>
+    <br>
+    <code>_push( -target=>\@stooges, -data=>['Moe', 'Larry', 'Curly'] );</code>
+    <br>
+    <code>_assign( -target=>\$now, -data=>[ _time(-target=>undef, -data=>[]) ]);</code>
+    <br>
+    <br>
+    <code>---------- CODE SAMPLE ----------</code>
   </section>
 
   <!---------- topic heading 6  ---------->
@@ -122,14 +135,13 @@
     <br>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, delectus. Sequi, illo:</p>
     <br>
-    <ol>
-      <li>item 1</li>
-      <li>item 1</li>
-      <li>item 1</li>
-      <li>item 1</li>
-      <li>item 1</li>
-      <li>item 1</li>
-    </ol>
+    <ul>
+      <li>list item</li>
+      <li>list item</li>
+      <li>list item</li>
+      <li>list item</li>
+      <li>list item</li>
+    </ul>
   </section>
 
   <!---------- topic heading 7  ---------->
@@ -142,7 +154,7 @@
     <br>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est doloremque saepe nam animi obcaecati non omnis, labore ullam! Quas quisquam nihil, assumenda corporis dignissimos fugit unde? Esse dolore laboriosam suscipit ducimus impedit. Repellat maiores tenetur modi!</p>
     <br>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, necessitatibus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, necessitatibus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime blanditiis necessitatibus sed alias! Esse dolorum, voluptatibus minima commodi, voluptas optio assumenda nemo nisi atque obcaecati ratione eos placeat magnam? Vel eaque sequi quod non vitae repellendus dolores eveniet eum voluptates?</p>
   </section>
 
   <!---------- topic heading 8  ---------->
@@ -154,9 +166,15 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio saepe, architecto culpa officia iusto voluptatibus facilis commodi rem optio laudantium animi necessitatibus natus quae deserunt eveniet minus sit, labore porro repellat mollitia exercitationem unde. Dignissimos ea, velit, similique maiores dolor corporis id doloribus commodi necessitatibus magnam labore minima aliquid nisi:</p>
     <br>
 
-    <code>CODE SAMPLE</code>
+    <code>---------- CODE SAMPLE ----------</code>
     <br>
-    <code>CODE SAMPLE CODE SAMPLE CODE SAMPLECODE SAMPLE </code>
+    <br>
+    <code>@gunslingers = ( @good, @bad, $Ugly );</code>
+    <br>
+    <code>_assign( -target=>\@gunslingers, -data=>[@good, @bad, $Ugly] );</code>
+    <br>
+    <br>
+    <code>---------- CODE SAMPLE ----------</code>
   </section>
 
   <!---------- topic heading 9  ---------->
@@ -167,9 +185,9 @@
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, consequuntur velit ea expedita beatae sint id, necessitatibus amet, aperiam eligendi delectus magni cumque voluptatibus mollitia illum aliquam error?</p>
     <br>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit nihil eius reprehenderit aliquam rem nemo eligendi voluptatum libero molestiae voluptates magnam, itaque nobis modi?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit nihil eius reprehenderit aliquam rem nemo eligendi voluptatum libero molestiae voluptates magnam, itaque nobis modi? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et repellendus quisquam corrupti consequatur ex impedit id illo beatae. Tempora, a suscipit recusandae optio officia qui at consectetur repudiandae vero hic eum atque illo ipsa, cupiditate dolorem labore.</p>
     <br>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nesciunt itaque laboriosam saepe incidunt neque accusamus nulla minus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nesciunt itaque laboriosam saepe incidunt neque accusamus nulla minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis soluta asperiores debitis!</p>
   </section>
 
     <!---------- topic heading 10  ---------->
@@ -181,13 +199,19 @@
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veniam provident facilis libero voluptatibus assumenda repellendus neque! Exercitationem sed inventore nesciunt qui magnam sunt obcaecati error placeat, debitis repellendus culpa eaque officia voluptas suscipit atque impedit rem unde? Ab!</p>
     <br>
 
-    <code>CODE SAMPLE CODE SAMPLE CODE SAMPLE CODE SAMPLE </code>
+    <code>---------- CODE SAMPLE ----------</code>
     <br>
-    <code>CODE SAMPLE CODE SAMPLE CODE SAMPLE CODE SAMPLE CODE SAMPLE CODE SAMPLE </code>
     <br>
-    <code>CODE SAMPLE CODE SAMPLE</code>
-    <code>CODE SAMPLE</code>
-    
+    <code># $insert = substr($string,1,2);</code>
+    <br>
+    <code># @keys = keys %hash;</code>
+    <br>
+    <code> if ($next > $max) { $max = $next }</code>
+    <br>
+    <code> _assign( -target=>\@gunslingers, -data=>[@good, @bad, $Ugly] );</code>
+    <br>
+    <br>
+    <code>---------- CODE SAMPLE ----------</code>
   </section>
 
   <!---------- topic heading 11  ---------->
@@ -196,7 +220,7 @@
       <h2 id="th_11">Topic Heading 11</h2>
     </header>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quam recusandae sunt architecto numquam similique maiores animi eaque est repudiandae, tempore quibusdam maxime officiis obcaecati provident ut amet? Sequi commodi, quam rem ratione saepe dignissimos consectetur architecto natus, alias corporis provident maiores!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quam recusandae sunt architecto numquam similique maiores animi eaque est repudiandae, tempore quibusdam maxime officiis obcaecati provident ut amet? Sequi commodi, quam rem ratione saepe dignissimos consectetur architecto natus, alias corporis provident maiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ratione quod obcaecati sint tempore quisquam libero, odio dicta perspiciatis cumque.</p>
     <br>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim vero beatae, odio ex nam minus ducimus doloribus dignissimos officia sequi nihil, nemo sapiente ea fugiat nulla! Quas tempore recusandae explicabo doloribus, sequi libero, iusto blanditiis sit dolores dolore ipsam rerum nemo nostrum. Esse, error.</p>
   </section>
@@ -209,7 +233,7 @@
 
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta odit optio unde nam voluptatum consequuntur vel mollitia officiis nulla ab? Quibusdam quis corporis magnam sapiente?</p>
     <br>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam odio dolore ea! Atque, totam recusandae. Possimus, dolore!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam odio dolore ea! Atque, totam recusandae. Possimus, dolore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex asperiores repellendus incidunt vel veniam fugiat labore debitis natus dolore rem, molestiae corporis ad voluptatum!</p>
     <br>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam accusantium possimus sit.</p>
   </section>
@@ -236,12 +260,12 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptatibus quis odit:</p>
     <br>
 
-    <ol>
-      <li>reference 1</li>
-      <li>reference 1</li>
-      <li>reference 1</li>
-      <li>reference 1</li>
-    </ol>
+    <ul>
+      <li>reference</li>
+      <li>reference</li>
+      <li>reference</li>
+      <li>reference</li>
+    </ul>
   </section>
 </main>
 </body>
